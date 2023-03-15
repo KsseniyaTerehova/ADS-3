@@ -2,8 +2,12 @@
 
 int cbinsearch(int *arr, int size, int value) {
   if (arr[mid] == value) {
-    for (int i = mid; i < size && arr[i] == value; ++i)
+    do {
       count++;
+      ++mid;
+    }
+    while (mid < size && arr[mid] == value);
     break;
   }
+  return 0;
 }
