@@ -4,8 +4,6 @@ int cbinsearch(int *arr, int size, int value) {
   if (arr[mid] == value) {
     for (int i = mid; i < size && arr[i] == value; ++i)
       count++;
-  }
-  else {
-    return 0;
+    break;
   }
 }
