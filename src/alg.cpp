@@ -6,5 +6,7 @@ int cbinsearch(int *arr, int size, int value) {
       count++;
     break;
   }
-  return 0;
+  else {
+    return 0;
+  }
 }
