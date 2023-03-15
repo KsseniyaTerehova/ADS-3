@@ -1,13 +1,8 @@
 // Copyright 2021 NNTU-CS
 
 int cbinsearch(int *arr, int size, int value) {
-  if (arr[mid] == value) {
-    do {
-      count++;
-      ++mid;
+  for (int i = 0; i < size; i++)
+    if (iarr[i] == value) {
+      count = count + 1;
     }
-    while (mid < size && arr[mid] == value);
-    break;
-  }
-  return 0;
 }
